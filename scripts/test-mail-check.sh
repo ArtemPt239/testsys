@@ -29,6 +29,7 @@ then
   myout+='TEST-MAIL-CHECK FAILED:'
   myout+=' can not find test mail in  '
   myout+=$pathtonewdir
+  myout+='. Probably some parts of your mail system is broken or you might have pointed the wrong mytestusermaildir parameter in config.'
 fi
 printf "%s\n" "$myout"
 
