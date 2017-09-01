@@ -1,9 +1,9 @@
 # Config for testsys
 
 # this mail address will be used to send notifications if sth goes wrong
-export myadminmail='shadowadmin@mailjail.pro'
+export myadminmail='admin@domain'
 # this user should be added to dovecot's user database 
-export mytestuser='test@mailjail.pro'
+export mytestuser='test@domain'
 # path for Maildir of $mytestuser
-export mytestusermaildir='/home/vmail/test@mailjail.pro/Maildir'
+export mytestusermaildir='/path/to/maildir'
 
