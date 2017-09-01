@@ -4,6 +4,6 @@
 export myadminmail='admin@domain'
 # this user should be added to dovecot's user database 
 export mytestuser='test@domain'
-# path for Maildir of $mytestuser
+# path to Maildir of $mytestuser
 export mytestusermaildir='/path/to/maildir'
 
