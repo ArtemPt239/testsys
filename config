@@ -1,9 +1,0 @@
-# Config for testsys
-
-# this mail address will be used to send notifications if sth goes wrong
-export myadminmail='admin@domain'
-# this user should be added to dovecot's user database 
-export mytestuser='test@domain'
-# path to Maildir of $mytestuser
-export mytestusermaildir='/path/to/maildir'
-
