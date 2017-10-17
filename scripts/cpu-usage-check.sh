@@ -2,7 +2,8 @@
 # Check whether at least 20% of cpu is idle
 hours=`date +%H`
 minutes=`date +%M`
-if [ \( $hours = '00' \) -a \( $minutes -lt 15 \) ]
+# Since sar is not working correctly a few minutes after midnight we would assume that everything is ok without checking it
+if [ \( $hours = '00' \) -a \( $minutes -lt 19 \) ]
 then
   echo 10;
 else
