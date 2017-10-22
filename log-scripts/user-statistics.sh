@@ -36,7 +36,7 @@ echo "failed logins per ip:"
 cat $_path_userlogins | grep $_user | grep "Failed login for"  | sed 's/.*Failed login for //' | awk '{ print($1 " " $3) }' | uniq -c | sort -nr
 
 echo --------------------------
-echo "(recieved and sent mails calculated since last logrotation)"
+
 else
 echo "Need to specify username"
 fi
