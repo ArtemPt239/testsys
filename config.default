@@ -1,7 +1,12 @@
 # Config for testsys
 
+### GENERAL
+# system type
+export mysystemtype='cyrus/dovecot'
 # this mail address will be used to send notifications if sth goes wrong
 export myadminmail='admin@domain.tld'
+
+### TEST SETTINGS
 # this user should be added to dovecot's user database
 export mytestuser='test@domain.tld'
 # path for Maildir of $mytestuser
