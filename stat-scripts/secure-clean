@@ -1,0 +1,5 @@
+#!/bin/bash
+# Remove common messages from secure (ssh) log
+cat /var/log/secure | sed '/Accepted password for/d;/session opened for user/d;/Received disconnect from/d;/session closed for user/d;/logout() returned an error/d;/ Server listening on/d'
+
+
