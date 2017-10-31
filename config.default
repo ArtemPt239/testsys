@@ -5,6 +5,8 @@
 export mysystemtype='cyrus/dovecot'
 # this mail address will be used to send notifications if sth goes wrong
 export myadminmail='admin@domain.tld'
+# path to roundcube root dir
+export mypathtoroundcube='/some/path'
 
 ### TEST SETTINGS
 # this user should be added to dovecot's user database
