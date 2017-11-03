@@ -7,7 +7,7 @@ if [ \( $hours = '00' \) -a \( $minutes -lt 19 \) ]
 then
   echo 0;
 else
-  myout=`LC_TIME=en_UK.utf8 sar -u | tail -5 | head -4 `
+  myout=` LANG=en_EN.UTF-8 LC_TIME=en_UK.utf8 sar -u | tail -5 | head -4 `
   if [ `printf "%s\n" "$myout" | awk '{s+=$8;} END {printf("%f\n",s/4);}'` \< 20 ]; then 
     echo 'CPU-USAGE-CHECK FAILURE:';
     printf "%s\n" "$myout";
